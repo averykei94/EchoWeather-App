@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Weather App</title>
+    <link rel="stylesheet" href="src/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+<head>
+    <p class="echo-weather"> 📡 EchoWeather App</p>
+    <div>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            id="search-form-input"
+            class="search-form-input"
+            required
+          />
+          <input 
+          type="submit" 
+          value="Search" 
+          class="search-form-button" 
+          />            
+        </form>
+    </div>
+</head>
+<hr>
+<main>
+    <p> Current Location </p>
+    <p class="city"> Dallas </p>
+    <div class="image-container">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/140/722/original/sunset.jpg?1724451808" alt="sunset" style="width:20%;">
+        <div class="top-left" id="city-temperature">🌤️ 12°C</div>
+        <div class="top-right" id="date-time"> Friday 16:35, Partly Cloudy</div>
+        <div class="top-right" id="weather-description"> Humidity: 59%, Wind: 0.76km/h</div>
+    </div>
+</main>
+<hr>
+<footer></footer>
+</body>
+</html>
