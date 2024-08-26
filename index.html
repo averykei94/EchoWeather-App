@@ -3,43 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="src/styles.css">
     <title>Echo Weather App</title>
-    <link rel="stylesheet" href="src/styles.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
-<head>
-    <p class="echo-weather"> 📡 EchoWeather App</p>
-    <div>
-        <form class="search-form">
-          <input
-            type="search"
-            placeholder="Enter a city.."
-            id="search-form-input"
-            class="search-form-input"
-            required
-          />
-          <input 
-          type="submit" 
-          value="Search" 
-          class="search-form-button" 
-          />            
-        </form>
+    <div class="echo-weather">📡 Echo Weather App</div>
+    <div class="weather-app-container">
+        <header>
+            <form class="search-form" id="search-form">
+            <input type="search" placeholder="Enter a city...." class="search-form-input" id="search-input-form" requried>
+            <input type="submit" value="search" class="search-form-button">
+            </form>
+        </header>
+        <br>
+        <hr>
+        <main>
+            <h1 class="input-city" id="city"> Dallas 
+            <div class="weather-data">    
+            </div>
+            <div class="temperature-container">
+                <div id="icon"></div>
+            <div class="current-temperature" id="temperature">32 <a class="temperature-unit">C°</a> </div>
+            </h1>
+            </div>
+                <p class="weather-details">
+                    <div class="float-child">
+                        <ul>
+                            <li class="time" id="time">Sunday, 12:30</li> 
+                        </ul>
+                    </div>
+                    <div class="cfloat-child">
+                        <ul>
+                          <li class="description" id="description"> Partky Cloudy </li>  
+                        </ul>
+                    </div>
+                    <div class="float-child">
+                        <ul>
+                           <li class="humidity" id="humidity"> Humidity: <strong>72%</strong> </li>
+                        </ul>
+                    </div>
+                    <div class="float-child">
+                        <ul>
+                           <li class="wind-speed" id="wind-speed"> Wind: <strong>5.66 km/h</strong> </li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+        </body>
+        </main>
+        <br>
+        <hr>
+        <footer>
+            This project was coded by <a href="" target="_blank"> Keisha Avery </a> , is
+            <a href="" target="_blank">open-sourced on Github</a>
+            <a href="" target="_blank">hosted on Netlify</a>
+        </footer>
     </div>
-</head>
-<hr>
-<main>
-    <p> Current Location </p>
-    <p class="city"> Dallas </p>
-    <div class="image-container">
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/140/722/original/sunset.jpg?1724451808" alt="sunset" style="width:20%;">
-        <div class="top-left" id="city-temperature">🌤️ 12°C</div>
-        <div class="top-right" id="date-time"> Friday 16:35, Partly Cloudy</div>
-        <div class="top-right" id="weather-description"> Humidity: 59%, Wind: 0.76km/h</div>
-    </div>
-</main>
-<hr>
-<footer></footer>
+    <script src="src/index.js"></script>
 </body>
 </html>
